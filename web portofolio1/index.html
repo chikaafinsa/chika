@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Holographic Cream</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BACKGROUND HOLOGRAPHIC -->
+    <div class="bg-holo"></div>
+    <div class="bg-holo2"></div>
+
+    <!-- NAVBAR -->
+    <header>
+      <h1 class="logo">Chika</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#bio">Biodata</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Kontak</a>
+        <a href="#game">Game</a>
+
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h2 class="title">Halo, Saya <span>Chika Afinsa Ramadhani</span></h2>
+        <p class="desc">
+          Saya siswa jurusan Rekayasa Perangkat Lunak dengan fokus pada
+          pengembangan web, dan Internet of Things (IoT). Saya memiliki
+          kemampuan dalam HTML, CSS, JavaScript, dan berbagai project teknologi
+          berbasis kontrol otomatis. Saya berkomitmen untuk terus belajar dan
+          berkembang di dunia teknologi digital.
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-frame">
+          <img src="foto/cika.jpeg" alt="Foto Saya" />
+        </div>
+      </div>
+    </section>
+
+    <!-- BIODATA -->
+    <section id="bio" class="bio">
+      <h2 class="section-title">Biodata Diri</h2>
+
+      <div class="bio-grid">
+        <div class="bio-card">
+          <h3>Nama Lengkap</h3>
+          <p>Chika Afinsa Ramadhani</p>
+        </div>
+
+        <div class="bio-card">
+          <h3>Sekolah</h3>
+          <p>SMKN Pasirian</p>
+        </div>
+
+        <div class="bio-card">
+          <h3>Jurusan</h3>
+          <p>Rekayasa Perangkat Lunak (RPL)</p>
+        </div>
+
+        <div class="bio-card">
+          <h3>Keahlian</h3>
+          <p>HTML, CSS, JavaScript, IoT, Pyhton dan PHP</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Project Unggulan</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <img
+            src="foto/mengukur jarak.jpeg"
+            class="project-img"
+            alt="Project 1"
+          />
+          <h3>Mengukur jarak</h3>
+          <p>
+            Alat yang membaca jarak antara sensor dan objek secara otomatis
+            menggunakan sensor ultrasonik
+          </p>
+        </div>
+
+        <div class="project-card">
+          <img src="foto/robotic.jpeg" class="project-img" alt="Project 2" />
+          <h3>Robotic</h3>
+          <p>Teknologi yang membuat mesin bisa bergerak dan bekerja otomatis</p>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="foto/kontrol lampu.jpeg"
+            class="project-img"
+            alt="Project 3"
+          />
+          <h3>Dashboard IoT</h3>
+          <p>Cara mengatur lampu lewat aplikasi di smartphone</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+  <h2 class="section-title">Kontak</h2>
+
+    <div class="contact-icons">
+      <!-- Telepon -->
+      <a href="https://wa.me/qr/JIGRWSNQBHSAB1" class="icon">
+        <img src="foto/whatsapp.jpeg" alt="Phone" />
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:avinsavinsa94@gmail.com" class="icon">
+        <img src="foto/gmail.jpeg" alt="Email" />
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/aafinsa" target="_blank" class="icon">
+        <img src="foto/instagram.jpeg" alt="Instagram" />
+      </a>
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/shorts/QdLgGYqyX-8?si=Q1XhGFYp2yOV3ir-" class="icon">
+        <img src="foto/youtube.jpeg" alt="Youtube" />
+      </a>
+
+      <!-- Lokasi -->
+      <a href="https://maps.app.goo.gl/okHfkTUYhvDoUvF6A?g_st=aw" target="_blank" class="icon">
+        <img src="foto/maps.jpeg" alt="Maps" />
+      </a>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-box">
+        <p>Email: avinsavinsa94@gmail.com</p>
+        <p>Instagram: @aafinsa</p>
+        <p>Telepon: 08xx-xxxx-xxxx</p>
+      </div>
+    </section>
+
+    <section id="game" class="game">
+  <h2 class="section-title">Game Matematika</h2>
+  
+  <!-- Gambar Ilustrasi -->
+  <div class="game-image">
+    <img src="foto/trivia.jpeg" alt="Game Matematika" />
+  </div>
+
+  <!-- Pilihan Topik -->
+  <div class="game-topics">
+    <button onclick="startGame('matriks')">Matriks</button>
+    <button onclick="startGame('barisan')">Barisan dan Deret</button>
+    <button onclick="startGame('bunga')">Bunga Majemuk</button>
+    <button onclick="startGame('anuitas')">Anuitas</button>
+  </div>
+
+  <!-- Area Pertanyaan -->
+  <div id="question-area" class="question-area">
+    <h3 id="question"></h3>
+    <input type="text" id="answer" placeholder="Jawaban" />
+    <button onclick="checkAnswer()">Submit</button>
+  </div>
+
+  <!-- Skor -->
+  <div id="score-area">
+    <h4>Skor: <span id="score">0</span></h4>
+  </div>
+  
+  <!-- Pesan Hasil -->
+  <div id="result-message"></div>
+</section>
+
+
+    <footer>
+      <p>© 2025 CHIKA — Cream Holographic Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
