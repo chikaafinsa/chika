@@ -1,0 +1,335 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background: #e8c9a6; /* coklat susu */
+  overflow-x: hidden;
+}
+
+/* BACKGROUND HOLOGRAFIK TANPA PINK (COKLAT KEEMASAN) */
+.bg-holo,
+.bg-holo2 {
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  filter: blur(150px);
+  z-index: -2;
+  opacity: 0.55;
+}
+
+.bg-holo {
+  background: radial-gradient(circle, #c8a070, #d8b890, #e8c9a6);
+  top: -200px;
+  right: -150px;
+}
+
+.bg-holo2 {
+  background: radial-gradient(circle, #d1b18a, #e2c6a2, #f0d7b6);
+  bottom: -200px;
+  left: -150px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 7%;
+  width: 100%;
+  background: rgba(240, 215, 190, 0.55);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(120, 90, 60, 0.3);
+  position: sticky;     /* ini saja cukup */
+  top: 0;
+  z-index: 999;
+}
+
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #6b4e37; /* coklat tua */
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #7a5b3d;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #4d3726;
+  text-shadow: 0 0 8px rgba(80, 60, 40, 0.4);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 7% 80px;
+  align-items: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #6b4e37;
+  font-weight: 700;
+}
+
+.title span {
+  background: linear-gradient(90deg, #daba92, #ecd7b9);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.desc {
+  margin: 20px 0;
+  width: 80%;
+  color: #5a4330;
+}
+
+.btn-hero {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  background: #8b6a47;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(120, 90, 60, 0.3);
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px);
+  background: #6b4e37;
+}
+
+/* HERO PHOTO */
+.photo-frame {
+  width: 300px;
+  height: 330px;
+  padding: 8px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #caa87e, #e5ccaa);
+  box-shadow: 0 15px 30px rgba(130, 100, 70, 0.3),
+    inset 0 0 20px rgba(200, 170, 120, 0.4);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* SECTION TITLES */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #6b4e37;
+}
+
+/* BIODATA */
+.bio {
+  padding: 80px 7%;
+}
+
+.bio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.bio-card {
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(240, 215, 190, 0.6);
+  box-shadow: 0 8px 20px rgba(120, 90, 60, 0.25);
+  border: 1px solid rgba(110, 80, 50, 0.3);
+}
+
+.bio-card h3 {
+  color: #5a3e28;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 80px 7%;
+}
+
+.project-list {
+  display: flex;
+  gap: 25px;
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.project-card {
+  flex: 1;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(240, 215, 190, 0.55);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(120, 90, 60, 0.3);
+  border: 1px solid rgba(110, 80, 50, 0.3);
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+
+/* CONTACT */
+.contact {
+  padding: 40px 20px 80px;
+  text-align: center;
+}
+
+#kontak {
+  scroll-margin-top: 150px;
+}
+
+
+.contact-box {
+  max-width: 350px;
+  margin: auto;
+  padding: 25px;
+  background: rgba(240, 215, 190, 0.6);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 25px rgba(120, 90, 60, 0.3);
+}
+.contact-icons img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: none;
+  mix-blend-mode: multiply;
+}
+
+.contact-box p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #5a3e28;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #5a3e28;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #5a3e28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.icon img {
+  width: 28px;
+  height: 28px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Efek navbar mengecil */
+header.shrink {
+  padding: 5px 40px;
+  background: rgba(240, 215, 190, 0.6);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+/* Animasi Fade-in */
+.section-title,
+.bio-card,
+.project-card,
+.hero-left,
+.hero-right {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+section {
+    padding-top: 100px; /* biar tidak kehimpit navbar */
+}
+
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.game {
+  text-align: center;
+  margin: 50px auto;
+}
+
+#game {
+    margin-top: 200px;
+}
+
+.game-topics button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.game-topics button:hover {
+  background-color: #4e34b5;
+}
+
+.question-area {
+  margin-top: 30px;
+}
+
+#answer {
+  padding: 10px;
+  margin: 10px;
+}
+
+#score-area {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#result-message {
+  font-size: 18px;
+  color: green;
+}
